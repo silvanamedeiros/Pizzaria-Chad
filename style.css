@@ -1,0 +1,89 @@
+/* Importaa fonte "Roboto" do Google Fonts em diversos estilos e pesos*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /*Define variáveis globais para cores e bardas, facilitando a manutenção e ajustes futuros*/
+    :root {
+        --main-color: #da190f;
+        --bg: #13131a;
+        --br-card: #0c0c14;
+        --border: 0.1rem solid grey;
+
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/**/
+    font-family: 'Roboto' ,'sans-serif';
+    text-decoration: none;
+    text-transform: capitalize; /**/
+    transition: 0.2s linear;/**/
+    outline: none;/**/
+    border: none;/**/
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;/* Configuração do font-size para 62.5%, facilitando o uso do rem ( 1REM = 10px)*/
+    overflow-x: hidden;/**/
+}
+
+body{
+    background: var(--bg);
+}
+
+header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;/*explicção do uso da porcentagem*/
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo img{
+    height: 6.5rem; /* define a altura da logo*/
+    border-radius: 100%; /* torna a logo circular*/
+    
+}
+
+.ul-header {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.ul-header li a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.ul-header li a:hover {
+    color: var(--main-color); /* muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);/* adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/* adiciona espaçamento inferior no hover*/
+}
+
+.icons { /* NÃO ESTOU MEXENDO NOS ÍCONES, E SIM NAS CAIXAS*/
+    display: flex;
+    align-items: center;
+    
+}
+
+.icons {
+    color: white; /* cor branca para ícones*/
+    cursor: pointer; /* altera o cursor ao passar sobre o ícone*/
+    font-size: 2.5rem; /* tamanho dos ícones*/
+    gap: 15px;
+}
+
+.icons i:hover {
+    color: var(--main-color); /* muda a cor do ícone ao passar o mouse*/
+}
+
+
+
