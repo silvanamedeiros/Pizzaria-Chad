@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;/**/
-    font-family: 'Roboto' ,'sans-serif';
+    font-family: 'Roboto','sans-serif';
     text-decoration: none;
     text-transform: capitalize; /**/
     transition: 0.2s linear;/**/
@@ -84,6 +84,41 @@ header{
 .icons i:hover {
     color: var(--main-color); /* muda a cor do ícone ao passar o mouse*/
 }
+
+#home {
+    display: flex;
+    align-items: center;
+    position: relative; /* permite posicionamento relativo*/
+    min-height: 85vh; /* altura mínima da sessão*/
+    background: url(imagens/images/home.jpg) no-repeat;/* add img sem repetição*/
+    background-size: cover;/*preenchimento da imagem*/
+    background-position: center;/* posicionamento da imagem*/
+    border-bottom: var(--border); /* adiciona borda inferior*/
+}
+
+.content {
+    max-width: 60rem;/* define largura máxima*/
+    position: relative;/* permite manipular a posição*/
+    z-index: 2;/* garante que o conteúdo fique acima da sobrreposição*/
+}
+
+.content h3 {
+    font-size: 6rem;/* tamanho do título*/
+    text-transform: uppercase;/* deixando o texto em caixa alta*/
+    color: #fff;/* cor branca*/
+}
+
+.content p {
+    font-size: 2rem;/* tamanho da letra para parágrafos*/
+    font-weight: lighter; /* peso da fonte*/
+    line-height: 1.8;/* espaçamento entre linhas*/
+    padding: 1rem 0;/* espeçamento interno*/
+    color: #fff;/* cor da letra*/
+}
+
+
+
+
 
 
 
