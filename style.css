@@ -1,43 +1,51 @@
 /* Importaa fonte "Roboto" do Google Fonts em diversos estilos e pesos*/
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-    /*Define variáveis globais para cores e bardas, facilitando a manutenção e ajustes futuros*/
-    :root {
-        --main-color: #da190f;
-        --bg: #13131a;
-        --br-card: #0c0c14;
-        --border: 0.1rem solid grey;
+/*Define variáveis globais para cores e bardas, facilitando a manutenção e ajustes futuros*/
+:root {
+    --main-color: #da190f;
+    --bg: #13131a;
+    --br-card: #0c0c14;
+    --border: 0.1rem solid grey;
 
-    }
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/**/
-    font-family: 'Roboto','sans-serif';
+    box-sizing: border-box;
+    /**/
+    font-family: 'Roboto', 'sans-serif';
     text-decoration: none;
-    text-transform: capitalize; /**/
-    transition: 0.2s linear;/**/
-    outline: none;/**/
-    border: none;/**/
+    text-transform: capitalize;
+    /**/
+    transition: 0.2s linear;
+    /**/
+    outline: none;
+    /**/
+    border: none;
+    /**/
     scroll-behavior: smooth;
 }
 
 html {
-    font-size: 62.5%;/* Configuração do font-size para 62.5%, facilitando o uso do rem ( 1REM = 10px)*/
-    overflow-x: hidden;/**/
+    font-size: 62.5%;
+    /* Configuração do font-size para 62.5%, facilitando o uso do rem ( 1REM = 10px)*/
+    overflow-x: hidden;
+    /**/
 }
 
-body{
+body {
     background: var(--bg);
 }
 
-header{
+header {
     background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;/*explicção do uso da porcentagem*/
+    padding: 1.5rem 7%;
+    /*explicção do uso da porcentagem*/
     border-bottom: var(--border);
     position: sticky;
     top: 0;
@@ -45,10 +53,12 @@ header{
     z-index: 999;
 }
 
-.logo img{
-    height: 6.5rem; /* define a altura da logo*/
-    border-radius: 100%; /* torna a logo circular*/
-    
+.logo img {
+    height: 6.5rem;
+    /* define a altura da logo*/
+    border-radius: 100%;
+    /* torna a logo circular*/
+
 }
 
 .ul-header {
@@ -63,62 +73,91 @@ header{
 }
 
 .ul-header li a:hover {
-    color: var(--main-color); /* muda a cor do hover*/
-    border-bottom: 0.1rem solid var(--main-color);/* adiciona uma linha inferior no hover*/
-    padding-bottom: 0.5rem;/* adiciona espaçamento inferior no hover*/
-}
-
-.icons { /* NÃO ESTOU MEXENDO NOS ÍCONES, E SIM NAS CAIXAS*/
-    display: flex;
-    align-items: center;
-    
+    color: var(--main-color);
+    /* muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);
+    /* adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /* adiciona espaçamento inferior no hover*/
 }
 
 .icons {
-    color: white; /* cor branca para ícones*/
-    cursor: pointer; /* altera o cursor ao passar sobre o ícone*/
-    font-size: 2.5rem; /* tamanho dos ícones*/
+    /* NÃO ESTOU MEXENDO NOS ÍCONES, E SIM NAS CAIXAS*/
+    display: flex;
+    align-items: center;
+
+}
+
+.icons {
+    color: white;
+    /* cor branca para ícones*/
+    cursor: pointer;
+    /* altera o cursor ao passar sobre o ícone*/
+    font-size: 2.5rem;
+    /* tamanho dos ícones*/
     gap: 15px;
 }
 
 .icons i:hover {
-    color: var(--main-color); /* muda a cor do ícone ao passar o mouse*/
+    color: var(--main-color);
+    /* muda a cor do ícone ao passar o mouse*/
 }
 
 #home {
     display: flex;
     align-items: center;
-    position: relative; /* permite posicionamento relativo*/
-    min-height: 85vh; /* altura mínima da sessão*/
-    background: url(imagens/images/home.jpg) no-repeat;/* add img sem repetição*/
-    background-size: cover;/*preenchimento da imagem*/
-    background-position: center;/* posicionamento da imagem*/
-    border-bottom: var(--border); /* adiciona borda inferior*/
+    position: relative;
+    /* permite posicionamento relativo*/
+    min-height: 85vh;
+    /* altura mínima da sessão*/
+    background: url(imagens/images/home.jpg) no-repeat;
+    /* add img sem repetição*/
+    background-size: cover;
+    /*preenchimento da imagem*/
+    background-position: center;
+    /* posicionamento da imagem*/
+    border-bottom: var(--border);
+    /* adiciona borda inferior*/
 }
 
 .content {
-    max-width: 60rem;/* define largura máxima*/
-    position: relative;/* permite manipular a posição*/
-    z-index: 2;/* garante que o conteúdo fique acima da sobrreposição*/
+    max-width: 60rem;
+    /* define largura máxima*/
+    position: relative;
+    /* permite manipular a posição*/
+    z-index: 2;
+    /* garante que o conteúdo fique acima da sobrreposição*/
 }
 
 .content h3 {
-    font-size: 6rem;/* tamanho do título*/
-    text-transform: uppercase;/* deixando o texto em caixa alta*/
-    color: #fff;/* cor branca*/
+    font-size: 6rem;
+    /* tamanho do título*/
+    text-transform: uppercase;
+    /* deixando o texto em caixa alta*/
+    color: #fff;
+    /* cor branca*/
 }
 
 .content p {
-    font-size: 2rem;/* tamanho da letra para parágrafos*/
-    font-weight: lighter; /* peso da fonte*/
-    line-height: 1.8;/* espaçamento entre linhas*/
-    padding: 1rem 0;/* espeçamento interno*/
-    color: #fff;/* cor da letra*/
+    font-size: 2rem;
+    /* tamanho da letra para parágrafos*/
+    font-weight: lighter;
+    /* peso da fonte*/
+    line-height: 1.8;
+    /* espaçamento entre linhas*/
+    padding: 1rem 0;
+    /* espeçamento interno*/
+    color: #fff;
+    /* cor da letra*/
 }
 
-
-
-
-
-
-
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
