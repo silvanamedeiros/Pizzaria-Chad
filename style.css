@@ -5,7 +5,7 @@
 :root {
     --main-color: #da190f;
     --bg: #13131a;
-    --br-card: #0c0c14;
+    --bg-card: #0c0c14;
     --border: 0.1rem solid grey;
 
 }
@@ -160,4 +160,72 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+
+section{
+    padding: 2rem 7%; /*garanteeapaçamento interno nas sessões*/
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; /*texto em caxa alta*/
+    padding-bottom: 3rem; /*espaçamento inferior em relação ao título*/
+    font-size: 4rem;/*40px*/
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase; /*texto em caixa alta*/
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.9rem 3rem;/*preenchimento interno superior e inferior*/
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    display: inline-block;/*deixando a formatação do botão em formato de bloco
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1*/
+
+
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;/*espaçamento entre as letras ao passar o mouse*/
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    flex-wrap: wrap;/*permite que os itens quebrem para a proxima linha se necessário*/
+    border: var(--border);/*aplica uma borda ao redor da linha*/
+}
+
+.row .image {
+    flex: 1 1 45rem;/*define o tamanho flexível do elemento: base 45rem, podendo crescer ou encolher, ou seja, faz com que possa ser adaptável para telas grandes ou peq*/
+}
+
+.row .image img {
+    width: 100%;/*faz co que a imagem ocupe td a largura do container (.image)*/
+
+}
+
+.row .content {
+    flex: 1 1 45rem;/*define o tam flexível do conteúdo: base 45rem, poderá crescer ou diminuir*/
+    padding: 2rem;/*adiciona espaçamento interno ao redor do conteúdo*/
+}
+
+.row .content h3 {
+    font-size: 3rem;/*define o tam da fonte para substituí-lo*/
+color: #fff;
+}
+
+.row .content p {
+    font-size: 1.6rem;/*define o tam da font para parágrafo*/
+    color: #ccc;/*define uma cor cinza clara pasa o texto*/
+    padding: 1rem 0;/*add espaçamento interno vertical ao texto as laterais zeradas*/
+    line-height: 1.8rem;/*define o espaçamento entre linhas de um texto*/
 }
