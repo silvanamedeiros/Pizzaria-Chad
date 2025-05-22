@@ -229,3 +229,54 @@ color: #fff;
     padding: 1rem 0;/*add espaçamento interno vertical ao texto as laterais zeradas*/
     line-height: 1.8rem;/*define o espaçamento entre linhas de um texto*/
 }
+
+.container {
+    display: grid; /*Organiza os elementos internos em um layout de grade*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*Cria colunas flexiveis com larg. min. de 30rem e máx. proporcional*/
+    gap: 1.5rem; /*Define o espaçamento entre os itens da grade*/
+}
+
+.container .box {
+    padding: 5rem; /*add espaçamento interno ao redor do conteúdo da caixa*/
+    text-align: center;/*centraliza o texo*/
+    border: var(--border); /*aplicando uma borda ao redor da caixa*/
+    background: var(--bg-card); /*define a cor de fundo da caixa*/
+}
+
+.container .box img {
+    height: 18rem;/*define a altura da img*/
+    border-radius: 100%;/*tornar a imagem circular*/
+}
+
+.container .box h2 {
+    color: #fff;/*aplica a cor branca ao título*/
+    font-size: 2rem;/*define o tam da fonte*/
+    padding: 1rem;/*add espaçamento vertical ao título*/
+}
+
+.container .box .price {
+    color: #fff;/*define a cor branca para o preço*/
+    font-size: 2.5rem;/*define o tam. da fonte do preço*/
+    padding: 0.5rem 0;/*add espaçamento vertical ao preço*/
+}
+
+.container .box .price span {
+    font-size: 1,5rem;/*define o tam da fonte para o preço original*/
+    text-decoration: line-through;/*aplica uma linha pra indicar*/
+    font-weight: lighter;/*aplica um peso de fonte mais fino*/
+}
+
+.container .box:hover {
+    background: #fff;
+}
+
+.container .box:hover>*{
+    color: black;/*altera a cor dos elementos filhos para preto ao passsar o mouse*/
+}
+
+
+
+
+
+  
