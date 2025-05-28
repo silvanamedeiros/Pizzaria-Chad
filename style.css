@@ -275,6 +275,155 @@ color: #fff;
     color: black;/*altera a cor dos elementos filhos para preto ao passsar o mouse*/
 }
 
+/*promoções*/
+.products .box-container {
+    display: grid;/*organiza os elementos em uma grade*/
+    grid-template-columns: auto(fit, minmax(30rem, 1fr)); /*cria colunas flexíveis com larg mín de 30rem e máx proporcional*/
+    gap: 1.5rem; /*define espaçamento entre os itens da grade*/
+
+}
+
+
+    /*estilizando os box( caixas)*/
+    .box-container .box {
+        text-align: center;/*centraliza os textos*/
+        border: var(--border);/*aplica borda ao redor da caixa*/
+        padding: 2rem;/*add espaçamento interno nas caixas*/
+    }
+
+    /*estilizando icons*/
+
+    .icons a i {
+        height: 3rem;/*define a alt dos icons*/ 
+        width: 3rem;/*larg dos icons*/
+        line-height: 3rem;/*distancia dos conteúdos/ alt da linha*/
+        font-size: 1.7rem;/*define o tam da fonte para os icons*/
+        border: var(--border);/*aplica borda ao redor dos icons*/
+        color: #fff;/*define a cor para os icons*/
+        margin: 0.3rem;/*add espaçamento entre os icons*/
+    }
+
+    .icons a i:hover {
+        background: var(--main-color);/*altera o fundo dos icons para cor principal*/
+
+    }
+
+    .box .image {
+        padding: 2.5rem 0;/*add espaçamento vertical*/
+    }
+
+    .box .image img {
+        height: 25rem;/*alt das imagens*/
+
+    }
+
+    /*estilização da caixa 'content'*/
+.box .content { 
+    color: #fff;/*define cor branca para conteúdo textual*/
+    font-size: 2.5rem;/*define o tam da fonte para o conteúdo*/
+}
+
+.box .content .stars {
+    padding: 1.5rem;/*add espaçamento ao redor das estrelas*/
+}
+
+.box .content .stars i {
+    font-size: 1.9rem;/*tam das estrelas*/
+    color: var(--main-color);/*aplica cor principal às estrelas*/
+}
+
+.box .content .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.box .content .price span {
+    font-weight: lighter;/*aplica fonte mais fina para o texto*/
+    font-size: 1.5rem;/*define o tem da fonte */
+    text-transform: lowercase;/*tranforma o texto adicional para letras minúsculas*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
