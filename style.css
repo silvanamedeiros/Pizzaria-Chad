@@ -301,6 +301,7 @@ color: #fff;
         border: var(--border);/*aplica borda ao redor dos icons*/
         color: #fff;/*define a cor para os icons*/
         margin: 0.3rem;/*add espaçamento entre os icons*/
+        text-align: center;
     }
 
     .icons a i:hover {
@@ -392,39 +393,77 @@ color: #fff;
 
 }
 
+.title-footer {
+    text-align: center;
+    text-transform: uppercase;/*caixa alta*/
+    font-size: 2rem;/*20px*/
+    color: #fff;
+    margin-bottom: 1.5rem;
 
+}
 
+.title-footer span {
+    color: var(--main-color);
+    text-transform: uppercase;
+    
+}
 
+footer {
+    background: var(--bg);
+    text-align: center;
+    padding: 4rem 0;/*add espaçamenro interno vertical ao rodapé*/
 
+}
 
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7%;/*add espaçamento interno horizontal usando porcentagem*/
+}
 
+.content-1 {
+    flex: 1 1 25rem;/*define tam flexível com larg min de 25 rem*/
+    margin: 1rem;/*add espaçamento ao redor do conteúdo*/
 
+}
 
+.content-1 ul {
+    list-style: none;
+    padding: 0;/*remove espaçamento interno padrão*/
+}
 
+.content-1 ul li {
+    margin-bottom: 1rem;/*add espaçamento inf entre os itens da lista*/
+}
 
+.content-1 ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
 
+.content-1 ul li a:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
 
+.social-links a i {
+    color: #ccc;
+    font-size: 3rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social-links a i:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
 
 
 
