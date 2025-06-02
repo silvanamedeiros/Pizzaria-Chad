@@ -163,7 +163,7 @@ header {
 }
 
 section{
-    padding: 2rem 7%; /*garanteeapaçamento interno nas sessões*/
+    padding: 2rem 7%; /*garante espaçamento interno nas sessões*/
 }
 
 .heading {
@@ -186,7 +186,9 @@ section{
     color: #fff;
     background: var(--main-color);
     cursor: pointer;
-    display: inline-block;/*deixando a formatação do botão em formato de bloco
+    display: inline-block;/*deixando a formatação do botão em formato de bloco*/
+    text-align: center;
+    
     https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1*/
 
 
@@ -463,6 +465,46 @@ footer .container {
 .social-links a i:hover {
     color: var(--main-color);
     transition: 0.8s;
+}
+
+.footer-boton {
+    text-align: center; /*centraliza o texto*/
+    padding: 1rem 0;/*add espaçamento interno vertical*/
+    font-size: 1.6rem;/*define o tam da fonte*/
+    border-top: var(--border);/*add borda superior*/
+    margin-top: 2rem;/*add espaço acima do rodapé inferior*/
+    color: #ccc;/*define a cor do texto como cinza claro*/
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    header  {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+   .ul-header {
+    display: none;
+   }
+}
+
+@media (max-width: 768px) {
+
+    .ul-header {
+        display: none;
+    }
+
+}
+
+@media (max-width: 168px) {
+    html {
+        font-size: 30%;
+    }
 }
 
 
