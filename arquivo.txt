@@ -1,0 +1,8 @@
+Aqui abordaremosalgumas propriedades do CSS:
+
+1 = Outline: ele é uma botda que aparce ao redor de um elemento focado ( como qdo clicamos ou usamos o Tab para navegar).
+
+
+2 = Propriedades position:
+-Static ( padrão)
+É um valor padrão, ele segue o fluxo normal da pág. Ele não responde às propriedades top, right, bottom e left.
