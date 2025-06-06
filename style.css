@@ -1,7 +1,7 @@
 /* Importaa fonte "Roboto" do Google Fonts em diversos estilos e pesos*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Define variáveis globais para cores e bardas, facilitando a manutenção e ajustes futuros*/
+/*Define variáveis globais para cores e bordas, facilitando a manutenção e ajustes futuros*/
 :root {
     --main-color: #da190f;
     --bg: #13131a;
