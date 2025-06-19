@@ -1,4 +1,4 @@
-/* Importaa fonte "Roboto" do Google Fonts em diversos estilos e pesos*/
+/* Importa a fonte "Roboto" do Google Fonts em diversos estilos e pesos*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*Define variáveis globais para cores e bordas, facilitando a manutenção e ajustes futuros*/
@@ -211,7 +211,7 @@ section{
 }
 
 .row .image img {
-    width: 100%;/*faz co que a imagem ocupe td a largura do container (.image)*/
+    width: 100%;/*faz com que a imagem ocupe td a largura do container (.image)*/
 
 }
 
